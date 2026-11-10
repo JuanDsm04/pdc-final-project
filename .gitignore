@@ -1,0 +1,12 @@
+archive/
+cache/
+*.keras
+*.joblib
+*.h5
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
