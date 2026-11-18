@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-11-17 21:17:54",
+  "entorno": "Local",
+  "sistema": "Linux 7.2.15-arch1-1",
+  "cpu": "AMD Ryzen 7 5800HS with Radeon Graphics",
+  "nucleos_fisicos": 8,
+  "nucleos_logicos": 16,
+  "ram_gb": 24.6,
+  "python": "3.12.15",
+  "tensorflow": "2.21.0",
+  "numpy": "2.4.6",
+  "numba": "0.68.1",
+  "cuda_tensorflow": "12.5.1",
+  "cudnn_tensorflow": "9",
+  "dispositivos_tf": [
+    "/physical_device:CPU:0",
+    "/physical_device:GPU:0"
+  ],
+  "gpu_numba": "NVIDIA GeForce GTX 1650",
+  "modo": "benchmark",
+  "repeticiones": 3,
+  "imgs_por_clase_benchmark": 800,
+  "epocas_benchmark": 5,
+  "n_jobs": 16,
+  "gpu": "NVIDIA GeForce GTX 1650, 4096 MiB, 615.78.08"
+}

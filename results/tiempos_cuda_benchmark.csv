@@ -1,0 +1,81 @@
+parte,modo,fase,modelo,repeticion,epoca,segundos,n_imagenes,dispositivo
+cuda,benchmark,inventario,-,1,,0.7611948809999376,,CPU
+cuda,benchmark,particion,-,1,,0.5132326679995458,,CPU
+cuda,benchmark,arranque_pool,paralelo,1,,0.29536445699977776,,CPU x16
+cuda,benchmark,preprocesamiento,paralelo,1,,1.976626839000346,23200.0,CPU x16
+cuda,benchmark,preprocesamiento,paralelo,2,,1.9259451579991946,23200.0,CPU x16
+cuda,benchmark,preprocesamiento,paralelo,3,,1.8602064209999298,23200.0,CPU x16
+cuda,benchmark,preprocesamiento,val,1,,1.10200783900018,13050.0,CPU x16
+cuda,benchmark,preprocesamiento,test,1,,1.1075802049999766,13050.0,CPU x16
+cuda,benchmark,escalabilidad_preprocesamiento,1 procesos,1,,12.230260565000208,23200.0,CPU x1
+cuda,benchmark,escalabilidad_preprocesamiento,2 procesos,1,,6.633895525999833,23200.0,CPU x2
+cuda,benchmark,escalabilidad_preprocesamiento,4 procesos,1,,3.5901262259994837,23200.0,CPU x4
+cuda,benchmark,escalabilidad_preprocesamiento,8 procesos,1,,2.226551701999597,23200.0,CPU x8
+cuda,benchmark,escalabilidad_preprocesamiento,16 procesos,1,,1.9249576760003038,23200.0,CPU x16
+cuda,benchmark,transferencia_h2d,train_uint8,1,,0.10764054600076634,23200.0,GPU
+cuda,benchmark,transferencia_d2h,predicciones_test,1,,0.0553784439998708,13050.0,GPU
+cuda,benchmark,transferencia_h2d,train_uint8,2,,0.10352375200000097,23200.0,GPU
+cuda,benchmark,transferencia_d2h,predicciones_test,2,,0.0503510959997584,13050.0,GPU
+cuda,benchmark,transferencia_h2d,train_uint8,3,,0.101059603000067,23200.0,GPU
+cuda,benchmark,transferencia_d2h,predicciones_test,3,,0.04772210200007976,13050.0,GPU
+cuda,benchmark,epoca,cnn_shallow,1,1.0,16.851398264000636,,GPU
+cuda,benchmark,epoca,cnn_shallow,1,2.0,5.510197769000115,,GPU
+cuda,benchmark,epoca,cnn_shallow,1,3.0,5.497631363999972,,GPU
+cuda,benchmark,epoca,cnn_shallow,1,4.0,5.492501271000037,,GPU
+cuda,benchmark,epoca,cnn_shallow,1,5.0,5.491504755999813,,GPU
+cuda,benchmark,entrenamiento,cnn_shallow,1,,39.10859845699997,23200.0,GPU
+cuda,benchmark,epoca,cnn_medium,1,1.0,19.461586089000775,,GPU
+cuda,benchmark,epoca,cnn_medium,1,2.0,7.107906526999614,,GPU
+cuda,benchmark,epoca,cnn_medium,1,3.0,7.11318797200056,,GPU
+cuda,benchmark,epoca,cnn_medium,1,4.0,7.118060464000337,,GPU
+cuda,benchmark,epoca,cnn_medium,1,5.0,7.122030296999583,,GPU
+cuda,benchmark,entrenamiento,cnn_medium,1,,48.164451944000575,23200.0,GPU
+cuda,benchmark,inferencia_test,cnn_medium,1,,1.6445807579993925,13050.0,GPU
+cuda,benchmark,epoca,cnn_medium,2,1.0,13.738640004000445,,GPU
+cuda,benchmark,epoca,cnn_medium,2,2.0,7.045392689000437,,GPU
+cuda,benchmark,epoca,cnn_medium,2,3.0,7.033235187000173,,GPU
+cuda,benchmark,epoca,cnn_medium,2,4.0,7.047744057999807,,GPU
+cuda,benchmark,epoca,cnn_medium,2,5.0,7.038876319000337,,GPU
+cuda,benchmark,entrenamiento,cnn_medium,2,,42.16163619700001,23200.0,GPU
+cuda,benchmark,inferencia_test,cnn_medium,2,,1.654138597000383,13050.0,GPU
+cuda,benchmark,epoca,cnn_medium,3,1.0,13.66415039399999,,GPU
+cuda,benchmark,epoca,cnn_medium,3,2.0,7.059360437000578,,GPU
+cuda,benchmark,epoca,cnn_medium,3,3.0,7.051395679999587,,GPU
+cuda,benchmark,epoca,cnn_medium,3,4.0,7.046808230999886,,GPU
+cuda,benchmark,epoca,cnn_medium,3,5.0,7.040100452999468,,GPU
+cuda,benchmark,entrenamiento,cnn_medium,3,,42.11960558200008,23200.0,GPU
+cuda,benchmark,inferencia_test,cnn_medium,3,,1.653084079999644,13050.0,GPU
+cuda,benchmark,epoca,fc_base,1,1.0,6.466839208000238,,GPU
+cuda,benchmark,epoca,fc_base,1,2.0,1.5426652440000908,,GPU
+cuda,benchmark,epoca,fc_base,1,3.0,1.55285326000012,,GPU
+cuda,benchmark,epoca,fc_base,1,4.0,1.5454358890001458,,GPU
+cuda,benchmark,epoca,fc_base,1,5.0,1.5404104700000971,,GPU
+cuda,benchmark,entrenamiento,fc_base,1,,12.905832826000733,23200.0,GPU
+cuda,benchmark,inferencia_test,fc_base,1,,0.42797928399977536,13050.0,GPU
+cuda,benchmark,epoca,cnn_medium_cpu_memoria,1,1.0,144.19950808799967,,CPU
+cuda,benchmark,epoca,cnn_medium_cpu_memoria,1,2.0,137.54770937000012,,CPU
+cuda,benchmark,epoca,cnn_medium_cpu_memoria,1,3.0,137.4665161160001,,CPU
+cuda,benchmark,epoca,cnn_medium_cpu_memoria,1,4.0,135.6955280379998,,CPU
+cuda,benchmark,epoca,cnn_medium_cpu_memoria,1,5.0,136.5282453810014,,CPU
+cuda,benchmark,entrenamiento,cnn_medium_cpu_memoria,1,,691.5986617179997,23200.0,CPU
+cuda,benchmark,compilacion_jit,cnn_medium_numba,1,,0.9356098709995422,,GPU
+cuda,benchmark,inferencia_test,cnn_medium_numba,1,,6.115754301001289,13050.0,GPU
+cuda,benchmark,numba_h2d,cnn_medium_numba,1,,0.052916167998773744,13050.0,GPU
+cuda,benchmark,numba_kernels,cnn_medium_numba,1,,6.038402966998547,13050.0,GPU
+cuda,benchmark,numba_d2h,cnn_medium_numba,1,,0.013053741990006529,13050.0,GPU
+cuda,benchmark,inferencia_test,cnn_medium_numba,2,,6.109727045000909,13050.0,GPU
+cuda,benchmark,numba_h2d,cnn_medium_numba,2,,0.04963956201390829,13050.0,GPU
+cuda,benchmark,numba_kernels,cnn_medium_numba,2,,6.040434493974317,13050.0,GPU
+cuda,benchmark,numba_d2h,cnn_medium_numba,2,,0.010239787994578364,13050.0,GPU
+cuda,benchmark,inferencia_test,cnn_medium_numba,3,,6.109168154000145,13050.0,GPU
+cuda,benchmark,numba_h2d,cnn_medium_numba,3,,0.04908469499969215,13050.0,GPU
+cuda,benchmark,numba_kernels,cnn_medium_numba,3,,6.0415121340010955,13050.0,GPU
+cuda,benchmark,numba_d2h,cnn_medium_numba,3,,0.00960174999818264,13050.0,GPU
+cuda,benchmark,barrido,clasico,1,,39.21989595000014,6525.0,CPU x16
+cuda,benchmark,extraccion_features,raw_gray32,1,,2.6792653480006265,36250.0,CPU x16
+cuda,benchmark,extraccion_features,hog+color,1,,8.813733848999618,36250.0,CPU x16
+cuda,benchmark,ajuste_hiperparametros,clasico,1,,81.88884386300015,23200.0,CPU x16
+cuda,benchmark,entrenamiento,clasico,1,,15.668987143000777,23200.0,CPU x16
+cuda,benchmark,extraccion_features_test,clasico,1,,3.2540239339996333,13050.0,CPU x16
+cuda,benchmark,inferencia_test,clasico,1,,0.596215592999215,13050.0,CPU x16
+cuda,benchmark,notebook_completo,-,1,,1101.733982199,,CPU y GPU

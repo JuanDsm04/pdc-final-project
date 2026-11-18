@@ -1,0 +1,22 @@
+{
+  "val": {
+    "cnn_shallow": 0.5239846743295019,
+    "cnn_medium": 0.935095785440613,
+    "fc_base": 0.5000766283524904,
+    "clasico": 0.992183908045977
+  },
+  "test": {
+    "cnn_medium": 0.9373946360153257,
+    "cnn_medium_numba": 0.9373946360153257,
+    "fc_base": 0.5055172413793103,
+    "clasico": 0.9915708812260536
+  },
+  "epocas": {
+    "cnn_shallow": 5,
+    "cnn_medium": 5,
+    "fc_base": 5
+  },
+  "mejor_cnn": "cnn_medium",
+  "modelo_clasico": "ExtraTrees(200) + hog+color",
+  "fotos_propias": "4/15"
+}

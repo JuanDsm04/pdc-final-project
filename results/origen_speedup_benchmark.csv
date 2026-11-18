@@ -1,0 +1,4 @@
+configuracion,segundos,speedup_acumulado
+"CPU, lee del disco en cada época (secuencial)",786.4091325480003,1.0
+"CPU, datos en memoria (control)",691.5986617179997,1.1370888581456795
+"GPU, datos en memoria (CUDA)",44.148564574333555,17.81279052060486
