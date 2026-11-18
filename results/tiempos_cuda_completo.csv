@@ -1,0 +1,114 @@
+parte,modo,fase,modelo,repeticion,epoca,segundos,n_imagenes,dispositivo
+cuda,completo,inventario,-,1,,0.779236848000437,,CPU
+cuda,completo,particion,-,1,,0.5322744410004816,,CPU
+cuda,completo,arranque_pool,paralelo,1,,0.31575610900472384,,CPU x16
+cuda,completo,preprocesamiento,paralelo,1,,5.087469253005111,60900.0,CPU x16
+cuda,completo,preprocesamiento,val,1,,1.1090692759971716,13050.0,CPU x16
+cuda,completo,preprocesamiento,test,1,,1.1166025940037798,13050.0,CPU x16
+cuda,completo,transferencia_h2d,train_uint8,1,,0.27656962100445526,60900.0,GPU
+cuda,completo,transferencia_d2h,predicciones_test,1,,0.055300266001722775,13050.0,GPU
+cuda,completo,epoca,cnn_shallow,1,1.0,24.78227261199936,,GPU
+cuda,completo,epoca,cnn_shallow,1,2.0,13.347700998005166,,GPU
+cuda,completo,epoca,cnn_shallow,1,3.0,13.36172666499624,,GPU
+cuda,completo,epoca,cnn_shallow,1,4.0,13.360817054999643,,GPU
+cuda,completo,epoca,cnn_shallow,1,5.0,13.32797156200104,,GPU
+cuda,completo,epoca,cnn_shallow,1,6.0,13.34887178500503,,GPU
+cuda,completo,epoca,cnn_shallow,1,7.0,13.316981875002966,,GPU
+cuda,completo,epoca,cnn_shallow,1,8.0,13.34283038599824,,GPU
+cuda,completo,epoca,cnn_shallow,1,9.0,13.317948748001072,,GPU
+cuda,completo,epoca,cnn_shallow,1,10.0,13.30360342199856,,GPU
+cuda,completo,epoca,cnn_shallow,1,11.0,13.28556977500557,,GPU
+cuda,completo,epoca,cnn_shallow,1,12.0,13.296457550000923,,GPU
+cuda,completo,epoca,cnn_shallow,1,13.0,13.316867533998447,,GPU
+cuda,completo,epoca,cnn_shallow,1,14.0,13.287426058996061,,GPU
+cuda,completo,epoca,cnn_shallow,1,15.0,13.28888333299983,,GPU
+cuda,completo,epoca,cnn_shallow,1,16.0,13.317101155000273,,GPU
+cuda,completo,epoca,cnn_shallow,1,17.0,13.309448254003655,,GPU
+cuda,completo,epoca,cnn_shallow,1,18.0,13.29711247600062,,GPU
+cuda,completo,epoca,cnn_shallow,1,19.0,13.246804098998837,,GPU
+cuda,completo,epoca,cnn_shallow,1,20.0,13.304823553997267,,GPU
+cuda,completo,epoca,cnn_shallow,1,21.0,13.314700645998528,,GPU
+cuda,completo,epoca,cnn_shallow,1,22.0,13.258574984000006,,GPU
+cuda,completo,epoca,cnn_shallow,1,23.0,13.28652037899883,,GPU
+cuda,completo,epoca,cnn_shallow,1,24.0,13.251860440002929,,GPU
+cuda,completo,epoca,cnn_shallow,1,25.0,13.299554895995243,,GPU
+cuda,completo,epoca,cnn_shallow,1,26.0,13.297508890005702,,GPU
+cuda,completo,epoca,cnn_shallow,1,27.0,13.295856526994612,,GPU
+cuda,completo,epoca,cnn_shallow,1,28.0,13.301241486995423,,GPU
+cuda,completo,epoca,cnn_shallow,1,29.0,13.289646078999795,,GPU
+cuda,completo,epoca,cnn_shallow,1,30.0,13.290555217005021,,GPU
+cuda,completo,entrenamiento,cnn_shallow,1,,411.6182689490015,60900.0,GPU
+cuda,completo,epoca,cnn_medium,1,1.0,29.85794255500514,,GPU
+cuda,completo,epoca,cnn_medium,1,2.0,17.221602493998944,,GPU
+cuda,completo,epoca,cnn_medium,1,3.0,17.16724993000389,,GPU
+cuda,completo,epoca,cnn_medium,1,4.0,17.23320424299891,,GPU
+cuda,completo,epoca,cnn_medium,1,5.0,17.224054771002557,,GPU
+cuda,completo,epoca,cnn_medium,1,6.0,17.207005830001435,,GPU
+cuda,completo,epoca,cnn_medium,1,7.0,17.212936320000154,,GPU
+cuda,completo,epoca,cnn_medium,1,8.0,17.204521126004693,,GPU
+cuda,completo,epoca,cnn_medium,1,9.0,17.194325443997514,,GPU
+cuda,completo,epoca,cnn_medium,1,10.0,17.20746843500092,,GPU
+cuda,completo,epoca,cnn_medium,1,11.0,17.202554181996675,,GPU
+cuda,completo,epoca,cnn_medium,1,12.0,17.193051636997552,,GPU
+cuda,completo,epoca,cnn_medium,1,13.0,17.178271188000508,,GPU
+cuda,completo,epoca,cnn_medium,1,14.0,17.186850674996094,,GPU
+cuda,completo,epoca,cnn_medium,1,15.0,17.180627251997066,,GPU
+cuda,completo,epoca,cnn_medium,1,16.0,17.193244957001298,,GPU
+cuda,completo,epoca,cnn_medium,1,17.0,17.21475524599373,,GPU
+cuda,completo,entrenamiento,cnn_medium,1,,305.8631121330036,60900.0,GPU
+cuda,completo,inferencia_test,cnn_medium,1,,1.6534519470005762,13050.0,GPU
+cuda,completo,epoca,fc_base,1,1.0,8.429452990996651,,GPU
+cuda,completo,epoca,fc_base,1,2.0,3.5224834510008805,,GPU
+cuda,completo,epoca,fc_base,1,3.0,3.52417135900032,,GPU
+cuda,completo,epoca,fc_base,1,4.0,3.514862263997202,,GPU
+cuda,completo,epoca,fc_base,1,5.0,3.5198261359983007,,GPU
+cuda,completo,epoca,fc_base,1,6.0,3.5306521730017266,,GPU
+cuda,completo,epoca,fc_base,1,7.0,3.5240586929940036,,GPU
+cuda,completo,epoca,fc_base,1,8.0,3.5176073819966405,,GPU
+cuda,completo,epoca,fc_base,1,9.0,3.5199653070012573,,GPU
+cuda,completo,epoca,fc_base,1,10.0,3.5081553049967624,,GPU
+cuda,completo,epoca,fc_base,1,11.0,3.504146192004555,,GPU
+cuda,completo,epoca,fc_base,1,12.0,3.518929352001578,,GPU
+cuda,completo,epoca,fc_base,1,13.0,3.5141883149990463,,GPU
+cuda,completo,epoca,fc_base,1,14.0,3.5034308940012124,,GPU
+cuda,completo,epoca,fc_base,1,15.0,3.507627576000232,,GPU
+cuda,completo,epoca,fc_base,1,16.0,3.507004216997302,,GPU
+cuda,completo,epoca,fc_base,1,17.0,3.5350078019982902,,GPU
+cuda,completo,epoca,fc_base,1,18.0,3.510005969001213,,GPU
+cuda,completo,epoca,fc_base,1,19.0,3.519439482995949,,GPU
+cuda,completo,epoca,fc_base,1,20.0,3.5367958179995185,,GPU
+cuda,completo,epoca,fc_base,1,21.0,3.5330126539993216,,GPU
+cuda,completo,epoca,fc_base,1,22.0,3.53261580200342,,GPU
+cuda,completo,epoca,fc_base,1,23.0,3.5180179520029924,,GPU
+cuda,completo,epoca,fc_base,1,24.0,3.5142401490011252,,GPU
+cuda,completo,epoca,fc_base,1,25.0,3.537275429996953,,GPU
+cuda,completo,epoca,fc_base,1,26.0,3.524052599997958,,GPU
+cuda,completo,epoca,fc_base,1,27.0,3.53335234199767,,GPU
+cuda,completo,epoca,fc_base,1,28.0,3.5141931389953243,,GPU
+cuda,completo,epoca,fc_base,1,29.0,3.5220577479994972,,GPU
+cuda,completo,epoca,fc_base,1,30.0,3.5152831399973365,,GPU
+cuda,completo,epoca,fc_base,1,31.0,3.5168281520018354,,GPU
+cuda,completo,epoca,fc_base,1,32.0,3.520526433996565,,GPU
+cuda,completo,epoca,fc_base,1,33.0,3.516478792000271,,GPU
+cuda,completo,epoca,fc_base,1,34.0,3.5260861269998713,,GPU
+cuda,completo,epoca,fc_base,1,35.0,3.522593185000005,,GPU
+cuda,completo,epoca,fc_base,1,36.0,3.537793392999447,,GPU
+cuda,completo,epoca,fc_base,1,37.0,3.5192002120020334,,GPU
+cuda,completo,epoca,fc_base,1,38.0,3.5312194360012654,,GPU
+cuda,completo,epoca,fc_base,1,39.0,3.5289379349997034,,GPU
+cuda,completo,epoca,fc_base,1,40.0,3.5261201479952433,,GPU
+cuda,completo,entrenamiento,fc_base,1,,146.85101934699924,60900.0,GPU
+cuda,completo,inferencia_test,fc_base,1,,0.4282464470015839,13050.0,GPU
+cuda,completo,compilacion_jit,cnn_medium_numba,1,,0.5146852059988305,,GPU
+cuda,completo,inferencia_test,cnn_medium_numba,1,,6.12675548200059,13050.0,GPU
+cuda,completo,numba_h2d,cnn_medium_numba,1,,0.05582551294355653,13050.0,GPU
+cuda,completo,numba_kernels,cnn_medium_numba,1,,6.042462038996746,13050.0,GPU
+cuda,completo,numba_d2h,cnn_medium_numba,1,,0.01412296705530025,13050.0,GPU
+cuda,completo,barrido,clasico,1,,39.4524079430048,6525.0,CPU x16
+cuda,completo,extraccion_features,raw_gray32,1,,4.774844990002748,73950.0,CPU x16
+cuda,completo,extraccion_features,hog+color,1,,17.03479565899761,73950.0,CPU x16
+cuda,completo,ajuste_hiperparametros,clasico,1,,273.40567188800196,60900.0,CPU x16
+cuda,completo,entrenamiento,clasico,1,,25.524340518997633,60900.0,CPU x16
+cuda,completo,extraccion_features_test,clasico,1,,3.143327193996811,13050.0,CPU x16
+cuda,completo,inferencia_test,clasico,1,,0.31740261300001293,13050.0,CPU x16
+cuda,completo,notebook_completo,-,1,,1256.6741164869964,,CPU y GPU

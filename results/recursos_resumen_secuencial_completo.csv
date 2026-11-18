@@ -1,0 +1,15 @@
+fase,segundos,cpu_total_medio,nucleos_equivalentes,nucleos_activos_medio,nucleo_mas_cargado_medio,ram_max_gb,gpu_util_media,gpu_util_max,gpu_mem_max_mb
+particion,1.0,6.7,1.1,1.0,90.0,7.3,0.0,0.0,2.0
+preprocesamiento | secuencial,34.0,7.2,1.2,1.0,93.0,10.3,0.0,0.0,2.0
+entrenamiento | cnn_shallow,11512.0,89.2,14.3,16.0,92.8,8.9,0.0,0.0,2.0
+entrenamiento | cnn_medium,7918.0,87.4,14.0,16.0,91.3,7.3,0.0,0.0,2.0
+inferencia_test | cnn_medium,19.0,68.5,11.0,15.7,82.2,7.1,0.0,0.0,2.0
+entrenamiento | fc_base,5185.0,70.5,11.3,15.0,83.0,7.3,0.0,0.0,2.0
+inferencia_test | fc_base,7.0,11.7,1.9,0.6,55.5,7.0,0.0,0.0,2.0
+barrido | clasico,110.0,6.9,1.1,1.0,95.7,7.8,0.0,0.0,2.0
+extraccion_features | raw_gray32,29.0,6.6,1.1,1.0,98.3,7.7,0.0,0.0,2.0
+extraccion_features | hog+color,108.0,6.7,1.1,1.0,96.5,8.4,0.0,0.0,2.0
+ajuste_hiperparametros | clasico,580.0,6.6,1.1,1.0,99.4,10.3,0.0,0.0,2.0
+entrenamiento | clasico,50.0,6.6,1.1,1.0,98.9,8.4,0.0,0.0,2.0
+extraccion_features_test | clasico,19.0,6.6,1.1,1.0,99.9,8.4,0.0,0.0,2.0
+inferencia_test | clasico,1.0,6.5,1.0,1.0,100.0,8.5,0.0,0.0,2.0

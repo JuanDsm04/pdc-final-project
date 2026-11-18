@@ -1,0 +1,22 @@
+{
+  "val": {
+    "cnn_shallow": 0.999080459770115,
+    "cnn_medium": 1.0,
+    "fc_base": 0.9301915708812261,
+    "clasico": 0.9982375478927203
+  },
+  "test": {
+    "cnn_medium": 1.0,
+    "cnn_medium_numba": 1.0,
+    "fc_base": 0.9302681992337165,
+    "clasico": 0.9986206896551724
+  },
+  "epocas": {
+    "cnn_shallow": 30,
+    "cnn_medium": 17,
+    "fc_base": 40
+  },
+  "mejor_cnn": "cnn_medium",
+  "modelo_clasico": "ExtraTrees(100) + hog+color",
+  "fotos_propias": "4/15"
+}

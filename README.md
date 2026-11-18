@@ -16,12 +16,45 @@ Toma la solución del Laboratorio 3 de Data Science (clasificador del alfabeto A
 | `proyecto3_asl_secuencial.ipynb` | Versión secuencial: solución del laboratorio cronometrada en CPU |
 | `proyecto3_asl_cuda.ipynb` | Versión paralela: preparación de datos en CPU multinúcleo, entrenamiento en GPU con TensorFlow y kernels propios con Numba CUDA; calcula el speedup |
 | `monitor_recursos.py` | Registro del uso de cada núcleo del CPU y de la GPU durante la ejecución |
+| `captura_recursos.sh` | Captura de pantalla de `nvidia-smi` y del uso por núcleo (`mpstat`) en Linux con Hyprland y `grim` |
+| `ejecuciones/` | Notebooks ejecutados en modo completo, con sus salidas |
 | `artifacts/splits.csv` | Partición train/val/test (70/15/15) del laboratorio |
 | `fotos_grupo/` | Fotos de señas propias usadas en las pruebas finales |
 | `results/` | Tiempos y hardware que genera el notebook |
 | `figures/` | Gráficas que exporta el notebook |
 | `evidencias/` | Capturas, gráficas y volcados de `nvidia-smi` del uso de recursos durante la ejecución |
 | `archive/` | Dataset (no se versiona) |
+
+Los notebooks de la raíz están ejecutados en modo benchmark.
+
+## Resultados
+
+Equipo: AMD Ryzen 7 5800HS (8 núcleos, 16 hilos), 24.6 GB de RAM, NVIDIA GeForce GTX 1650 de 4 GB, Linux, Python 3.12, TensorFlow 2.21 (CUDA 12.5, cuDNN 9) y Numba 0.68.
+
+| Fase | Benchmark: secuencial | Benchmark: CUDA | Speedup | Completo: secuencial | Completo: CUDA | Speedup |
+|---|---|---|---|---|---|---|
+| Preprocesamiento de train | 11.9 s | 1.9 s | 6.2x | 33.4 s | 5.1 s | 6.6x |
+| Época de CNN Medium | 157.3 s | 8.8 s | 17.9x | 497.5 s | 17.9 s | 27.7x |
+| Entrenamiento de CNN Medium | 786.4 s | 44.1 s | 17.8x | 7,960.6 s | 305.9 s | 26.0x |
+| Inferencia en test, Keras | 17.8 s | 1.65 s | 10.8x | 19.5 s | 1.65 s | 11.8x |
+| Inferencia en test, kernels Numba | 17.8 s | 6.1 s | 2.9x | 19.5 s | 6.1 s | 3.2x |
+| Pipeline completo de CNN Medium | 804.2 s | 50.2 s | 16.0x | 7,980.1 s | 315.1 s | 25.3x |
+
+- Benchmark: 800 imágenes por clase, 5 épocas y 3 repeticiones de las fases de la CNN Medium. Completo: configuración del laboratorio (60,900 imágenes de entrenamiento, EarlyStopping) en una sola corrida. En completo, la CNN Medium se detuvo en la época 16 en CPU y en la 17 en GPU, así que la época es la comparación más justa.
+- Con los datos en memoria pero sin GPU, el entrenamiento solo mejora 1.14x (`results/origen_speedup_benchmark.csv`); el resto del speedup viene de la GPU.
+- Exactitud en test del modo completo: CNN Medium 1.000 en ambas versiones (también con los kernels Numba), FC Base 0.927 en CPU y 0.930 en GPU, ExtraTrees 0.999 en ambas.
+- Las fases del modelo clásico solo usan el CPU multinúcleo y aceleran entre 1.9x y 6.3x.
+
+La tabla completa por fase está en `results/comparacion_<modo>.csv` y en `figures/speedup_<modo>.png`.
+
+### Evidencias
+
+| Archivo | Muestra |
+|---|---|
+| `evidencias/recursos_<parte>_<modo>.png` | Uso de cada núcleo y de la GPU durante toda la corrida, con las fases marcadas |
+| `evidencias/captura_<parte>_<modo>_<fase>.png` | Captura de `nvidia-smi` y `mpstat` en las fases principales |
+| `evidencias/nvidia-smi_<parte>_<modo>_<fase>.txt` | Estado de la GPU a mitad de cada fase |
+| `results/recursos_resumen_<parte>_<modo>.csv` | Por fase: núcleos ocupados, uso medio y máximo de la GPU y memoria de la GPU |
 
 ## Dataset
 
@@ -92,7 +125,7 @@ Todos los archivos llevan el modo (`benchmark` o `completo`) en el nombre, para 
 - `results/resumen_secuencial_<modo>.csv` y `results/tiempo_por_epoca_secuencial_<modo>.csv`: media y desviación por fase.
 - `results/metricas_secuencial_<modo>.json`: exactitud de cada modelo en validación y test.
 - `results/recursos_secuencial_<modo>.csv` y `results/recursos_resumen_secuencial_<modo>.csv`: uso por núcleo y de GPU, muestra a muestra y resumido por fase.
-- `results/fase_actual.txt`: fase que se está ejecutando en este momento.
+- `results/fase_actual.txt`: fase que se está ejecutando en este momento (no se versiona). `captura_recursos.sh` la muestra en sus capturas.
 - `figures/tiempos_secuencial_<modo>.png`: tiempo por fase.
 - `evidencias/recursos_secuencial_<modo>.png` y `evidencias/nvidia-smi_secuencial_<modo>_<fase>.txt`: uso de recursos en el tiempo y estado de la GPU durante cada fase.
 
