@@ -1,4 +1,4 @@
-archive/
+archive
 cache/
 *.keras
 *.joblib
@@ -10,3 +10,4 @@ venv/
 .env
 .DS_Store
 Thumbs.db
+results/fase_actual.txt
